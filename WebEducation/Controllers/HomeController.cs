@@ -35,7 +35,8 @@ namespace WebEducation.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var items = GetAllUsers();
+            return View(items);
         }
 
         public IActionResult Privacy()
